@@ -20,6 +20,6 @@ Realizations of ML algorithms, some homework from different courses, my attempts
 ## Pytorch
 Project is created with:
 * :white_circle: Simple NN detecting numbers from MNIST dataset
-### GAN
+#### GAN
 * :white_circle: GAN generating fingerprints
 * :white_circle: GAN generating fake MNIST numbers
