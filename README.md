@@ -7,7 +7,7 @@ Realizations of ML algorithms, some homework from different courses, my attempts
 * [Pytorch](#pytorch)
 
 ## Machine Learning
-* [Linear Regression](https://github.com/xtbtds/Machine-Learning-Algorithms)
+:white_check_mark: * [Linear Regression](https://github.com/xtbtds/Machine-Learning-Algorithms) 
 * Logistic Regression
 
 ## Pytorch
