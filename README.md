@@ -18,4 +18,4 @@ Realizations of ML algorithms, some homework from different courses, my attempts
 Project is created with:
 * Simple NN detecting numbers from MNIST dataset
 * GAN generating fake MNIST numbers
-** GAN generating fingerprints
+* GAN generating fingerprints
