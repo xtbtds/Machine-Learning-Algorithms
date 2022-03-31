@@ -8,6 +8,7 @@ Realizations of ML algorithms, some homework from different courses, my attempts
 ## Table of contents
 * [Machine Learning](#machine-learning)
 * [Pytorch](#pytorch)
+  * [GAN](#gan)
 
 ## Machine Learning
 * :white_circle: [Linear Regression](https://github.com/xtbtds/Machine-Learning-Algorithms)  
@@ -20,4 +21,5 @@ Realizations of ML algorithms, some homework from different courses, my attempts
 Project is created with:
 * :white_circle: Simple NN detecting numbers from MNIST dataset
 * :white_circle: GAN generating fake MNIST numbers
-  * GAN generating fingerprints
+* GAN
+  * :white_circle: GAN generating fingerprints
