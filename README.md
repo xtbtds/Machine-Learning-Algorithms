@@ -1,6 +1,8 @@
 # Machine-Learning-Algorithms
 Realizations of ML algorithms, some homework from different courses, my attempts to train some models, etc, etc...
 :white_check_mark: - finished and tested
+:white_circle: - planned
+:yellow_square: - started, not finished
 
 
 ## Table of contents
@@ -8,14 +10,14 @@ Realizations of ML algorithms, some homework from different courses, my attempts
 * [Pytorch](#pytorch)
 
 ## Machine Learning
-* :red_square: [Linear Regression](https://github.com/xtbtds/Machine-Learning-Algorithms)  
-* :red_square: Logistic Regression
-* :red_square: Logistic Regression with L1-regularizarion
-* :red_square: Logistic Regression with L2-regularization
-* :red_square:Logistic Regression with Elastic Net
+* :white_circle: [Linear Regression](https://github.com/xtbtds/Machine-Learning-Algorithms)  
+* :white_circle: Logistic Regression
+* :white_circle: Logistic Regression with L1-regularizarion
+* :white_circle: Logistic Regression with L2-regularization
+* :white_circle: Logistic Regression with Elastic Net
 
 ## Pytorch
 Project is created with:
-* Simple NN detecting numbers from MNIST dataset
-* GAN generating fake MNIST numbers
+* :white_circle: Simple NN detecting numbers from MNIST dataset
+* :white_circle: GAN generating fake MNIST numbers
   * GAN generating fingerprints
