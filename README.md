@@ -1,8 +1,8 @@
 # Machine-Learning-Algorithms
 Realizations of ML algorithms, some homework from different courses, my attempts to train some models, etc, etc...
-:white_check_mark: - finished and tested
 :white_circle: - planned
-:yellow_square: - started, not finished
+:yellow_square: - started, not tested
+:white_check_mark: - finished and tested
 
 
 ## Table of contents
