@@ -8,14 +8,14 @@ Realizations of ML algorithms, some homework from different courses, my attempts
 * [Pytorch](#pytorch)
 
 ## Machine Learning
-* [Linear Regression](https://github.com/xtbtds/Machine-Learning-Algorithms)  
-* Logistic Regression
-* Logistic Regression with L1-regularizarion
-* Logistic Regression with L2-regularization
-* Logistic Regression with Elastic Net
+* :red_square: [Linear Regression](https://github.com/xtbtds/Machine-Learning-Algorithms)  
+* :red_square: Logistic Regression
+* :red_square: Logistic Regression with L1-regularizarion
+* :red_square: Logistic Regression with L2-regularization
+* :red_square:Logistic Regression with Elastic Net
 
 ## Pytorch
 Project is created with:
 * Simple NN detecting numbers from MNIST dataset
 * GAN generating fake MNIST numbers
-** GAN generating fingerprints
+  * GAN generating fingerprints
