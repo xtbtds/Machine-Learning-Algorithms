@@ -1,13 +1,13 @@
 # Machine-Learning-Algorithms
-My realizations of ML algorithms, some homework from different courses, my attempts to train some models, etc, etc...
+Realizations of ML algorithms, some homework from different courses, my attempts to train some models, etc, etc...
 
 
 ## Table of contents
 * [Machine Learning](#machine-learning)
-* [Technologies](#technologies)
+* [Pytorch](#pytorch)
 * [Setup](#setup)
 
-## General info
+## Machine Learning
 This project is simple Lorem ipsum dolor generator.
 	
 ## Technologies
