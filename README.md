@@ -7,10 +7,9 @@ Realizations of ML algorithms, some homework from different courses, my attempts
 * [Pytorch](#pytorch)
 
 ## Machine Learning
-This project is simple Lorem ipsum dolor generator.
+* Linear Regression
+* Logistic Regression
 	
-## Technologies
+## Pytorch
 Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+* Simple NN detecting numbers from MNIST dataset
