@@ -16,6 +16,7 @@ Realizations of ML algorithms, some homework from different courses, my attempts
 * :white_circle: Logistic Regression with L1-regularizarion
 * :white_circle: Logistic Regression with L2-regularization
 * :white_circle: Logistic Regression with Elastic Net
+* :white_circle: Logistic K-nearest neighbors
 
 ## Pytorch
 Project is created with:
