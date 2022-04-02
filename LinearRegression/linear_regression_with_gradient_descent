@@ -36,9 +36,8 @@ class MyGradientLinearRegression(MyLinearRegression):
     def get_losses(self):
         return self.losses
 
-"""#### Тестирование
-
-Посчитаем предсказания на сгенерированном датасете
+"""
+Тестирование
 """
 
 regressor = MyGradientLinearRegression(fit_intercept=True)
