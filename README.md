@@ -11,7 +11,7 @@ Realizations of ML algorithms, some homework from different courses, my attempts
   * [GAN](#gan)
 
 ## Machine Learning
-* :white_circle: [Linear Regression](https://github.com/xtbtds/Machine-Learning-Algorithms)  
+* :white_circle: [Linear Regression](https://github.com/xtbtds/Machine-Learning-Algorithms/tree/main/LinearRegression)  
 * :white_circle: Logistic Regression
 * :white_circle: Logistic Regression with L1-regularizarion
 * :white_circle: Logistic Regression with L2-regularization
