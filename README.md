@@ -13,8 +13,8 @@ Realizations of ML algorithms, some homework from different courses, my attempts
 ## Machine Learning
 * :yellow_square: [Linear Regression](https://github.com/xtbtds/Machine-Learning-Algorithms/tree/main/LinearRegression)
 * :yellow_square: [Linear Regression](https://github.com/xtbtds/Machine-Learning-Algorithms/blob/main/LinearRegression/linear_regression_with_gradient_descent) - with gradient descent
-* :blue_square: Logistic Regression
-* :blue_square: Logistic Regression with L1-regularizarion
+* :yellow_square: [Logistic Regression](https://github.com/xtbtds/Machine-Learning-Algorithms/tree/main/LogisticRegression)
+* :blue_square: Logistic Regression with L1(Ridge)-regularizarion
 * :blue_square: Logistic Regression with L2-regularization
 * :blue_square: Logistic Regression with Elastic Net
 * :blue_square: Logistic K-nearest neighbors
