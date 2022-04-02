@@ -11,7 +11,7 @@ Realizations of ML algorithms, some homework from different courses, my attempts
   * [GAN](#gan)
 
 ## Machine Learning
-* :white_check_mark: [Linear Regression](https://github.com/xtbtds/Machine-Learning-Algorithms/tree/main/LinearRegression)
+* :yellow_square: [Linear Regression](https://github.com/xtbtds/Machine-Learning-Algorithms/tree/main/LinearRegression)
 * :yellow_square: [Linear Regression](https://github.com/xtbtds/Machine-Learning-Algorithms/blob/main/LinearRegression/linear_regression_with_gradient_descent) - with gradient descent
 * :blue_square: Logistic Regression
 * :blue_square: Logistic Regression with L1-regularizarion
