@@ -9,7 +9,6 @@ from sklearn.metrics import mean_squared_error
 
 
 
-
 class MyLinearRegression:
     def __init__(self, fit_intercept=True): 
         self.fit_intercept = fit_intercept   #bias
@@ -72,12 +71,10 @@ class MySGDLinearRegression(MyGradientLinearRegression):
         self.n_sample = n_sample
 
     def _calc_gradient(self, X, y, y_pred):
-        inds = np.random.choice(np.arange(X.shape[0]), size=self.n_sample, replace=False)  #rendomly select items  
+        inds = np.random.choice(np.arange(X.shape[0]), size=self.n_sample, replace=False)    #randomly select items  
         grad = 2 * (y_pred[inds] - y[inds])[:, np.newaxis] * X[inds]
         grad = grad.mean(axis=0)
         return grad
-
-
 
 
 """
@@ -90,6 +87,34 @@ objects_num = 50
 X = np.linspace(-5, 5, objects_num)
 y = linear_expression(X) + np.random.randn(objects_num) * 5      #add noise
 X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.5)
+
+
+regressor = MySGDLinearRegression(fit_intercept=True)
+l = regressor.fit(X_train[:, np.newaxis], y_train, max_iter=100).get_losses()
+predictions = regressor.predict(X_test[:, np.newaxis])
+w = regressor.get_weights()
+
+
+plt.figure(figsize=(10, 7))
+plt.plot(X, linear_expression(X), label='real', c='g')
+plt.scatter(X_train, y_train, label='train')
+plt.scatter(X_test, y_test, label='test')
+plt.plot(X, regressor.predict(X[:, np.newaxis]), label='predicted', c='r')
+plt.grid(alpha=0.2)
+plt.legend()
+plt.show()
+
+plt.figure(figsize=(10, 7))
+plt.plot(l)
+plt.title('Gradient descent learning')
+plt.ylabel('loss')
+plt.xlabel('iteration')
+plt.grid(alpha=0.2)
+plt.show()
+
+
+
+#We can change number of samples. The less number we take, the worse convergence of LOSS we have.
 
 
 
