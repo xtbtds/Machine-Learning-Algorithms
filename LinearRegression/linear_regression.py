@@ -2,37 +2,27 @@ import numpy as np
 import pandas as pd
 import scipy.linalg as sla
 import matplotlib.pyplot as plt
-
+from sklearn.model_selection import train_test_split
 from sklearn import datasets
 from sklearn.linear_model import LinearRegression, Lasso, Ridge
 
 class MyLinearRegression:
-    def __init__(self, fit_intercept=True):
-        self.fit_intercept = fit_intercept
+    def __init__(self, fit_intercept=True): 
+        self.fit_intercept = fit_intercept   #bias
 
-    def fit(self, X, y):
-        # Принимает на вход X, y и вычисляет веса по данной выборке
-        # Не забудьте про фиктивный признак равный 1
-        
+    def fit(self, X, y):        #calculate the weights
         n, k = X.shape
-        
         X_train = X
         if self.fit_intercept:
-            X_train = np.hstack((X, np.ones((n, 1))))
-
-        self.w = np.linalg.inv(X_train.T @ X_train) @ X_train.T @ y
-
+            X_train = np.hstack((X, np.ones((n, 1))))   #add bias column
+        self.w = np.linalg.inv(X_train.T @ X_train) @ X_train.T @ y   #minimized by MLS
         return self
         
     def predict(self, X):
-        # Принимает на вход X и возвращает ответы модели
-        # Не забудьте про фиктивный признак равный 1
         n, k = X.shape
         if self.fit_intercept:
             X_train = np.hstack((X, np.ones((n, 1))))
-
         y_pred = X_train @ self.w
-
         return y_pred
     
     def get_weights(self):
@@ -40,24 +30,15 @@ class MyLinearRegression:
 
     
 if __name__ == "__main__":
-        """#### Тестирование
-    Сначала сгенерируем искусственные данные для теста моделей
-    """
 
-    from sklearn.model_selection import train_test_split
-
-    def linear_expression(x):
+    def linear_expression(x):     #generate test data
         return 5 * x + 6
 
-    # по признакам сгенерируем значения таргетов с некоторым шумом
     objects_num = 50
     X = np.linspace(-5, 5, objects_num)
-    y = linear_expression(X) + np.random.randn(objects_num) * 5
+    y = linear_expression(X) + np.random.randn(objects_num) * 5      #add noise
 
-    # выделим половину объектов на тест
     X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.5)
-
-    """Нанесем точки выборки и зависимость на график для наглядности"""
 
     plt.figure(figsize=(10, 7))
     plt.plot(X, linear_expression(X), label='real', c='g')
@@ -69,15 +50,11 @@ if __name__ == "__main__":
     plt.legend()
     plt.show()
 
-    """Обучим модель на трейне и предскажем результаты на тесте"""
-
+    #train the model
     regressor = MyLinearRegression()
-
     regressor.fit(X_train[:, np.newaxis], y_train)
-
     predictions = regressor.predict(X_test[:, np.newaxis])
     w = regressor.get_weights()
-    w
 
     plt.figure(figsize=(20, 7))
 
