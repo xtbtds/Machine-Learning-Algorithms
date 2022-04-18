@@ -1,3 +1,38 @@
+import numpy as np
+import pandas as pd
+import scipy.linalg as sla
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn import datasets
+from sklearn.linear_model import LinearRegression, Lasso, Ridge
+from sklearn.metrics import mean_squared_error
+
+
+class MyLinearRegression:
+    def __init__(self, fit_intercept=True): 
+        self.fit_intercept = fit_intercept   #bias
+
+    def fit(self, X, y):        #calculate the weights
+        n, k = X.shape
+        X_train = X
+        if self.fit_intercept:
+            X_train = np.hstack((X, np.ones((n, 1))))   #add bias column
+        self.w = np.linalg.inv(X_train.T @ X_train) @ X_train.T @ y   #minimized by MLS
+        return self
+        
+    def predict(self, X):
+        n, k = X.shape
+        if self.fit_intercept:
+            X_train = np.hstack((X, np.ones((n, 1))))
+        y_pred = X_train @ self.w
+        return y_pred
+    
+    def get_weights(self):
+        return self.w
+
+
+
+
 class MyRidgeRegression(MyLinearRegression):
     def __init__(self, alpha=1.0, **kwargs):
         super().__init__(**kwargs)
@@ -21,12 +56,24 @@ class MyRidgeRegression(MyLinearRegression):
     def get_weights(self):
         return self.w
 
-"""Протестируем решение на нашем датасете:"""
+"""
+TESTING
+"""
+def linear_expression(x):     #generate test data
+    return 5 * x + 6
+objects_num = 50
+X = np.linspace(-5, 5, objects_num)
+y = linear_expression(X) + np.random.randn(objects_num) * 5
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, train_size=0.5)
 
 alpha = 1.0
 regressor = MyRidgeRegression(alpha=alpha).fit(X_train[:, np.newaxis], y_train)
 
-"""Проверим работу, сравнив с `linear_model.Ridge` из sklearn"""
+
+"""
+Compare with `linear_model.Ridge` from sklearn
+"""
 
 sklearn_reg = Ridge(alpha).fit(X_train[:, np.newaxis], y_train)
 assert np.allclose(regressor.get_weights(), np.append(sklearn_reg.coef_, sklearn_reg.intercept_))
