@@ -11,6 +11,7 @@ Realizations of ML algorithms, some homework from different courses, my attempts
   * [GAN](#gan)
 
 ## Machine Learning
+#### Linear models
 * :white_check_mark: [Linear Regression](https://github.com/xtbtds/Machine-Learning-Algorithms/tree/main/LinearRegression/linear_regression.py)
 * :white_check_mark: [Linear Regression](https://github.com/xtbtds/Machine-Learning-Algorithms/blob/main/LinearRegression/linear_regression_with_gradient_descent.py) - with gradient descent
 * :white_check_mark: [Linear Regression](https://github.com/xtbtds/Machine-Learning-Algorithms/blob/main/LinearRegression/linear_regression_SGD.py) - with SGD
@@ -19,9 +20,12 @@ Realizations of ML algorithms, some homework from different courses, my attempts
 * :white_check_mark: [Linear Regression](https://github.com/xtbtds/Machine-Learning-Algorithms/blob/main/LinearRegression/linear_regression_ridge_SGD.py) - with L2 (Ridge)-regularization and SGD
 * :white_check_mark: [Logistic Regression](https://github.com/xtbtds/Machine-Learning-Algorithms/blob/main/LogisticRegression/logistic_regression.py)
 * :blue_square: Logistic Regression with Elastic Net (L1 + L2 regularizations)
+#### Decision Trees
 
-## Pytorch
+## Pytorch and NN
 * :blue_square: Simple NN detecting numbers from MNIST dataset
+#### CNN
+
 #### GAN
 * :blue_square: GAN generating fingerprints
 * :blue_square: GAN generating fake MNIST numbers
