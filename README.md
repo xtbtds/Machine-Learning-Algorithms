@@ -23,7 +23,7 @@ Realizations of ML algorithms, some homework from different courses, my attempts
 ### Decision Trees
 
 ## Pytorch and NN
-* :white_check_mark: [1 layer NN classifying numbers from MNIST](https://github.com/xtbtds/Machine-Learning-Algorithms/blob/main/Pytorch/1_layer_MNIST_classifier.ipynb) - pure python + autograd, 0.91 accuracy
+* :white_check_mark: [1 layer NN classifying numbers from MNIST](https://github.com/xtbtds/Machine-Learning-Algorithms/blob/main/Pytorch/1_layer_MNIST_classifier.ipynb) - pure python + numpy + autograd, 0.91 accuracy
 ### CNN
 
 ### GAN
