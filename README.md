@@ -23,7 +23,7 @@ Realizations of ML algorithms, some homework from different courses, my attempts
 ### Decision Trees
 
 ## Pytorch and NN
-* :blue_square: Simple NN detecting numbers from MNIST dataset
+* :white_check_mark: 1 layer NN classifying numbers from MNIST
 ### CNN
 
 ### GAN
