@@ -26,7 +26,7 @@ Realizations of ML algorithms, some homework from different courses, my attempts
 * :white_check_mark: [1 layer NN classifying numbers from MNIST](https://github.com/xtbtds/Machine-Learning-Algorithms/blob/main/Pytorch/1_layer_MNIST_classifier.ipynb) - pure python + numpy + autograd, 0.91 accuracy
 * :white_check_mark: [2 layers NN classifying numbers from MNIST](https://github.com/xtbtds/Machine-Learning-Algorithms/blob/main/Pytorch/2_layers_nn_Module.ipynb) - nn.Module
 ### CNN
-* :white_check_mark: LeNet simple realization
+* :white_check_mark: [LeNet simple realization](https://github.com/xtbtds/Machine-Learning-Algorithms/blob/main/Pytorch/LeNet.ipynb)
 
 ### GAN
 * :blue_square: GAN generating fingerprints
